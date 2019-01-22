@@ -178,12 +178,12 @@ class App extends Component {
 
             <div>
               <span className="cre-pre">Created by | </span>
-              <Link
+              <a
                 className="cre-name"
-                to="http://portfolio.siddharth-pandey.com"
+                href="http://portfolio.siddharth-pandey.com"
               >
                 Siddharth Pandey |
-              </Link>
+              </a>
             </div>
           </footer>
         </Fragment>
