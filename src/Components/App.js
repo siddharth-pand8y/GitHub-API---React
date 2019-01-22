@@ -172,7 +172,7 @@ class App extends Component {
           </Switch>
           <footer>
             <p>
-              This website used Github API to search & fetch details of the
+              This website uses Github API to search & fetch details of the
               user.
             </p>
 
