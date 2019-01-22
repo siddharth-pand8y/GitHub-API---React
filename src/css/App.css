@@ -1,0 +1,368 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.App-header {
+  background-color: #24292e;
+  width: 100%;
+  height: 84px;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 12px;
+  padding-top: 12px;
+  z-index: 32;
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.header-logo {
+  margin: 12px 0;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.Navigation {
+  margin-left: 50px;
+}
+
+.Navigation ul {
+  list-style: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.Navigation ul li {
+  display: inline;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.Search-box-form {
+  align-items: center;
+  float: right;
+  height: 45px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Search-box-label {
+  background-color: hsla(0, 0%, 100%, 0.125);
+
+  height: 42px;
+  width: 340px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+.Search-box-input {
+  width: 313px;
+  height: 42px;
+  -webkit-appearance: none;
+
+  background: none;
+  border: 0;
+  box-shadow: none;
+
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 100%;
+
+  color: inherit;
+  font-size: 16px;
+}
+
+.Search-box-input:focus {
+  background-color: none;
+  border: none;
+  outline: none;
+}
+
+.Search-box-slash img {
+  margin: 12px;
+}
+/*
+.Search-box-slash:hover {
+  background-color: rgba(8, 8, 8);
+  transition: all ease-in 0.2s;
+  border-radius: 4px;
+}
+*/
+
+.Search-box-button {
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+  background-color: hsla(0, 0%, 100%, 0);
+  outline: none;
+  border: none;
+  background-image: url(./../images/search.svg);
+}
+
+.sub-heading-bar {
+  background-color: #fafbfc;
+  border-bottom: 1px solid #eee;
+  color: #666;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  padding-top: 20px;
+  font-size: 10px;
+  padding: 10px 70px;
+}
+
+.sub-heading-bar h1 {
+  padding: 10px;
+}
+
+.sub-heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.sub-heading-container h2,
+.sub-heading-container p,
+.sub-heading-container svg {
+  line-height: 20px;
+  padding: 5px;
+}
+
+.sub-heading-container p {
+  padding: 2px 15px;
+  background-color: rgba(27, 31, 35, 0.08);
+  border-radius: 5px;
+  line-height: 25px;
+}
+.user-unordered-list {
+  list-style: none;
+}
+
+.user-info {
+  /*
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  */
+
+  display: grid;
+  grid-template-columns: 650px 400px;
+  align-items: center;
+  margin: 20px 150px;
+  padding: 20px 0;
+  border-bottom: rgba(36, 41, 46, 0.225) 1px solid;
+}
+
+.user-list-link {
+  display: grid;
+  grid-template-columns: 60px 500px;
+  align-items: center;
+}
+
+.user-info img {
+  border-radius: 6px;
+  height: 48px;
+}
+
+.user-info h1 {
+  font-weight: 500;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.user-info p {
+  margin-left: 60px;
+}
+
+.user-info p a {
+  color: black;
+  font-size: 25px;
+}
+
+.profile-container {
+  padding: 0 70px;
+  width: 90vw;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 20vw 70vw;
+}
+/*-------------------------------------------------------------------*/
+.profile-left-box {
+  grid-column: 1/2;
+  width: 20vw;
+}
+
+.name-container {
+  width: 20vw;
+  padding: 20px 0;
+  display: block;
+}
+
+.realname-text {
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.username-text {
+  color: #666;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+.user-work-info {
+  list-style: none;
+  width: 20vw;
+}
+
+.user-work-info li p {
+  margin-left: 8px;
+  display: inline;
+  line-height: 22px;
+}
+
+.user-work-info a {
+  margin-left: 8px;
+  line-height: 22px;
+  color: black;
+}
+.user-work-info svg {
+  padding-top: 2px;
+}
+.user-company,
+.user-location,
+.user-email,
+.user-blog,
+.user-created-at {
+  padding-top: 4px;
+}
+
+/*-------------------------------------------------------------------*/
+
+.profile-right-box {
+  grid-template-columns: 2/3;
+  margin-left: 10px;
+}
+
+.top-git-bar {
+  display: flex;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #d1d5da;
+}
+.top-git-bar a {
+  color: #24292e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 16px;
+  padding: 16px 8px;
+  text-align: center;
+}
+.tag-no {
+  background-color: rgba(27, 31, 35, 0.08);
+  border-radius: 20px;
+  color: #586069;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 2px 5px;
+}
+
+.actual-info-ul {
+  display: grid;
+  grid-template-rows: repeat(11, 40px);
+  list-style: none;
+}
+.actual-info-ul li {
+  margin: 5px 10px;
+  display: grid;
+  grid-template-columns: 30vw 30vw;
+}
+.actual-number {
+  grid-column: 2/3;
+}
+.actual-tag {
+  grid-column: 1/2;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  z-index: 150;
+  height: 7vh;
+
+  background-color: #24292e;
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 12px;
+  padding-top: 12px;
+  z-index: 32;
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60vw 25vw;
+  padding: 0 5vw;
+  margin: auto;
+  text-align: center;
+
+  _position: absolute;
+  _top: expression(
+    eval(
+      document.documentElement.scrollTop +
+        (document.documentElement.clientHeight-this.offsetHeight)
+    )
+  );
+}
+
+footer div {
+  font-family: 'Teko';
+  border-left: white solid 1px;
+}
+
+footer div,
+footer p {
+  line-height: 7vh;
+}
+.cre-pre {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.cre-name {
+  font-weight: 200;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cre-ico {
+  line-height: 7vh;
+  margin: 0;
+}
