@@ -1,0 +1,38 @@
+#mobile-display,
+#orient-pot {
+  display: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 90vw;
+  height: 40vh;
+  text-align: center;
+  font-size: 2em;
+  background-color: #000;
+  color: white;
+}
+
+@media (orientation: portrait) {
+  #mobile-display {
+    display: none;
+  }
+  #orient-pot {
+    display: block;
+    margin: 0 auto 10vh auto;
+    padding: 20px;
+  }
+  #root {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #mobile-display {
+    display: block;
+    padding-top: 20vh;
+    margin: 10vh auto 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #root {
+    display: none;
+  }
+}
