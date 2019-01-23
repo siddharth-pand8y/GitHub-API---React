@@ -3,7 +3,7 @@
   display: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   width: 90vw;
-  height: 40vh;
+  height: 90vh;
   text-align: center;
   font-size: 2em;
   background-color: #000;
@@ -15,9 +15,13 @@
     display: none;
   }
   #orient-pot {
+    font-size: 5vh;
+    text-align: left;
     display: block;
-    margin: 0 auto 10vh auto;
-    padding: 20px;
+    padding-top: 35vh;
+    margin: 5vh auto;
+    padding-left: 5vw;
+    padding-right: 20px;
   }
   #root {
     display: none;
@@ -26,13 +30,21 @@
 
 @media only screen and (max-width: 600px) {
   #mobile-display {
+    font-size: 4.5vh;
+    text-align: center;
     display: block;
-    padding-top: 20vh;
-    margin: 10vh auto 0 auto;
+    padding-top: 35vh;
+    margin: 5vh auto;
     padding-left: 20px;
     padding-right: 20px;
   }
+  #mobile-display span {
+    font-size: 6vh;
+  }
   #root {
+    display: none;
+  }
+  #orient-pot {
     display: none;
   }
 }
