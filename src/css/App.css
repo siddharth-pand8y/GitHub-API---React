@@ -236,9 +236,29 @@ a {
   font-weight: 300;
   line-height: 24px;
 }
+
+.bio-container {
+  border-top: 1px solid #e1e4e8 !important;
+  font-size: 14px;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  width: 230px;
+  padding: 20px 0;
+}
+
+.bio-text {
+  width: 230px;
+}
+
+.bio-text {
+}
+
 .user-work-info {
   list-style: none;
-  width: 20vw;
+  width: 230px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e1e4e8 !important;
 }
 
 .user-work-info li p {
@@ -366,4 +386,3 @@ footer p {
   line-height: 7vh;
   margin: 0;
 }
-
