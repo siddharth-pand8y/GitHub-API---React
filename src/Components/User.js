@@ -122,7 +122,6 @@ class User extends Component {
                     </div>
                   )}
                 </li>
-
                 <li>
                   {' '}
                   {user.email && (

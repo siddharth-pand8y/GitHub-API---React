@@ -251,9 +251,6 @@ a {
   width: 230px;
 }
 
-.bio-text {
-}
-
 .user-work-info {
   list-style: none;
   width: 230px;
@@ -281,6 +278,15 @@ a {
 .user-blog,
 .user-created-at {
   padding-top: 4px;
+}
+
+.user-blog {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user-blog a {
+  color: #0366d6;
 }
 
 /*-------------------------------------------------------------------*/
